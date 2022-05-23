@@ -5,7 +5,7 @@ media
 .DS_Store
 #*.sqlite3 demo db
 *.env
-
+venv
 # Accept these files in the repository
 !.gitignore
 !.travis.yml
