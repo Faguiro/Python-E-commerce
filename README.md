@@ -1,56 +1,75 @@
-# Django-Ecommerce
+# Python-E-commerce
 
 
-Ecommerce website built with Django 2.2.3, Python 3.7.3, and AWS
+### Ecommerce website construído com Django 2.2.3 e Python 3.7.3
+<img src="https://www.alura.com.br/artigos/assets/python-uma-introducao-a-linguagem/imagem1.gif" width="200" height="auto" />
+
+#### Features:
 
 
+`Slide do produto`
 
-`Product Slide`
 
-`Shop Page`
+`Página da loja`
 
-`Product Detail Page`
+`Página de detalhes do produto`
 
-`Cart Page`
+`Página do carrinho`
 
-`BillingAddress Page`
+`Página de endereço de cobrança`
 
-`Stripe Payment Page`
+`Página de pagamento Stripe`
 
-`Order Success Page`
+`Página de sucesso do pedido`
 
-# Installation
+# Instalação:
 
-`pip install django`
+```
+pip install django
+```
 
-`virtualenv env`
+```
+virtualenv env
+```
 
-# For Mac/ Linux
+# Para Mac/ Linux:
 
-`source env/bin/activate`
+```
+source env/bin/activate
+```
 
-# For Window
+# Para Window:
 
-`env\scripts\activate`
+```
+env\scripts\activate
+```
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
-`python manage.py makemigrations`
+```
+python manage.py makemigrations
+```
 
-`python manage.py migrate`
+```
+python manage.py migrate
+```
 
-`python manage.py runserver`
+```
+python manage.py runserver
+```
 
-# For Admin Login
+# Para logar como Admin:
 
 ```python
 python manage.py createsuperuser
 Username : admin
 Password : 12345678
 ```
-# Demo
+# Demo:
 
-Em breve
+``Deploy em breve...``
 
 
 
