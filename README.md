@@ -2,7 +2,7 @@
 
 
 ### Ecommerce website construído com Django 2.2.3 e Python 3.7.3
-<img src="https://www.alura.com.br/artigos/assets/python-uma-introducao-a-linguagem/imagem1.gif" width="200" height="auto" />
+<img src="https://static.wixstatic.com/media/70e5fd_665f338d2615452aaf9367d7a1a79cfd~mv2.gif" width="200" height="auto" /><img src="https://www.alura.com.br/artigos/assets/python-uma-introducao-a-linguagem/imagem1.gif" width="100" height="auto" />
 
 #### Features:
 
