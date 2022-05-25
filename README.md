@@ -14,6 +14,8 @@
 
 `Página de detalhes do produto`
 
+`Página categoria com banner`
+
 `Página do carrinho`
 
 `Página de endereço de cobrança`
