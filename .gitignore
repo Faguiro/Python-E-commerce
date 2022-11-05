@@ -5,10 +5,12 @@ media
 .DS_Store
 #*.sqlite3 demo db
 *.env
+*.venv
 venv
 # Accept these files in the repository
 !.gitignore
 !.travis.yml
 /.env
+/.venv
 /.vscode
 /.idea
