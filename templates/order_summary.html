@@ -5,15 +5,15 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h2>Order Summary</h2>
+      <h2>Resumo do pedido</h2>
       <table class="table">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Product Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Qty</th>
-            <th scope="col">Total Price</th>
+            <th scope="col">Prouto</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Qt</th>
+            <th scope="col">Total</th>
           </tr>
         </thead>
         <tbody>
@@ -32,10 +32,10 @@
             </td>
             <td>
               {% if order_item.item.discount_price %}
-                  ${{ order_item.get_total_discount_item_price}}
-                  <span class="badge badge-primary">  Saving ${{ order_item.get_amount_saved }}</span>
+                  R$ {{ order_item.get_total_discount_item_price}}
+                  <span class="badge badge-primary">  Saving R$ {{ order_item.get_amount_saved }}</span>
               {% else %}
-                  ${{ order_item.get_total_item_price}}
+                  R$ {{ order_item.get_total_item_price}}
               {% endif %}
               <a style="color: red" href="{% url 'core:remove-from-cart' order_item.item.slug %}">
               	<i class="fas fa-trash float-right"></i>
@@ -44,25 +44,25 @@
           </tr>
           {% empty %}
           <tr>
-			<td colspan="5">Your cart is empty</td>
+			<td colspan="5">Seu carrinho está vazio</td>
           </tr>
         </tbody>
         {% endfor %}
         {% if object.coupon %}
         <tr>
-          <td colspan="5"><b>Coupon : </b></td>
-          <td>- ${{ object.coupon.amount }}</td>
+          <td colspan="5"><b>Cupon: </b></td>
+          <td>- R$ {{ object.coupon.amount }}</td>
         </tr>
         {% endif%}
         {% if object.get_total %}
         <tr>
-        	<td colspan="5"><b>Order Total : </b></td>
-        	<td><b>${{ object.get_total }}</b></td>
+        	<td colspan="5"><b>Total do pedido : </b></td>
+        	<td><b>R$ {{ object.get_total }}</b></td>
         </tr>
         <tr>
         	<td colspan="5">
         		<a href="/checkout" class="btn btn-warning float-right ml-2">Checkout</a>
-        		<a href="/" class="btn btn-primary float-right">Continue Shopping</a>
+        		<a href="/" class="btn btn-primary float-right">Continuar comprando</a>
 
         	</td>
         </tr>

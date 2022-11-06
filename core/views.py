@@ -17,6 +17,7 @@ import random
 import string
 import stripe
 stripe.api_key = settings.STRIPE_SECRET_KEY
+#stripe.api_key = "sk_test_51L2284Lbp7ai87oavCNWe5c42hkdVvmoBn25MWSsBWMhUUbCHAZ5A68d9eqCqnJKpjuPkXBNonNDnSWNBukmfmpw00OKmSv4oT"
 
 
 def create_ref_code():
@@ -45,14 +46,17 @@ class PaymentView(View):
         try:
             charge = stripe.Charge.create(
                 amount=amount,  # cents
-                currency="usd",
+                currency="brl",
                 source=token
             )
+
             # create the payment
             payment = Payment()
             payment.stripe_charge_id = charge['id']
             payment.user = self.request.user
+            print(payment.user)
             payment.amount = order.get_total()
+            print(payment.amount)
             payment.save()
 
             # assign the payment to the order
@@ -79,7 +83,7 @@ class PaymentView(View):
 
         except stripe.error.InvalidRequestError as e:
             # Invalid parameters were supplied to Stripe's API
-            messages.error(self.request, "Invalid parameters")
+            messages.error(self.request, "Invalid parameters", f"{e}")
             return redirect("/")
 
         except stripe.error.AuthenticationError as e:
@@ -96,7 +100,7 @@ class PaymentView(View):
         except stripe.error.StripeError as e:
             # Display a very generic error to the user, and maybe send
             # yourself an email
-            messages.error(self.request, "Something went wrong")
+            messages.error(self.request, f"{e}")
             return redirect("/")
 
         except Exception as e:

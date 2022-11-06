@@ -7,11 +7,11 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6 offset-3 mt-3">
-      <h2>Request Refund</h2>
+      <h2>Devolução</h2>
       <form method="POST">
         {% csrf_token %}
         {{form|crispy}}
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
      
     </div>

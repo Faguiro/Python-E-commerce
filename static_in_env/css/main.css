@@ -630,6 +630,7 @@ iframe {
   position: absolute;
   left: 52px;
   top: 50%;
+  width: 150px;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);

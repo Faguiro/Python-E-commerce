@@ -4,7 +4,8 @@ ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 DEBUG = True
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
+#SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
+SECRET_KEY = '*j0x^v7*ca(rw@^#01jum0mu=##6@_40j0)5m44d01b$9=%w#0'
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
@@ -52,7 +53,7 @@ TEMPLATES = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
@@ -112,5 +113,5 @@ SOCIALACCOUNT_PROVIDERS = {
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-STRIPE_PUBLIC_KEY = 'pk_test_lX3r6OMjOU2yzFsNSHq6belT00EY82kZmH'
-STRIPE_SECRET_KEY = 'sk_test_tn0CTDaIJHUJyAqhsf39cfsC00LNjsqDnb'
+STRIPE_PUBLIC_KEY = 'pk_test_51L2284Lbp7ai87oa8Hh9a0ynMBcnr0AkQtG9YShJDa7gW5IlVL50zDiFeQjjIJjZvdAVt74rWOqKfqh6JTfVUlRK00prvaXM3H'
+STRIPE_SECRET_KEY = 'sk_test_51L2284Lbp7ai87oavCNWe5c42hkdVvmoBn25MWSsBWMhUUbCHAZ5A68d9eqCqnJKpjuPkXBNonNDnSWNBukmfmpw00OKmSv4oT'
