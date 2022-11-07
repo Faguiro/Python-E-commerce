@@ -31,24 +31,24 @@
 }
 
 .block2-labelsale::before {
-  background-color: white;
-  color: #000;
-  content: 'Sale';
+  background-color: rgb(252, 122, 7);
+  color: whitesmoke;
+  content: 'Oferta';
 }
 
 .block2-labelnew::before {
   background-color: #007bff;
-  content: 'New';
+  content: 'Novo';
 }
 
 .block2-labelpromotion::before{
-	background-color: #000;
-	content: 'Promotion';
+	background-color: rgb(250, 23, 163);
+	content: '60% off';
 	width: 70px;
   }
 
   .btn-dark {
-    color: #fff;
+    color: rgb(107, 250, 5);
     background-color: #000;
     border-color: #000;
 }
@@ -79,7 +79,7 @@
 <!--						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">-->
 <!--							&lt;!&ndash; Button &ndash;&gt;-->
 <!--							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">-->
-<!--								Shop Now-->
+<!--								COMPRAR-->
 <!--							</a>-->
 <!--						</div>-->
 <!--					</div>-->
@@ -92,9 +92,18 @@
 	<!-- Category start -->
 	<style>
 		.hov1{
-			background-color: white !important;
+			font-family: Montserrat-Bold;
+			font-size: 16px;
+			color: #000;
+			background-color: rgba(255,255,255,0.53) !important;
 			color: black !important;
+			font-weight: 800;
+			line-height: 10px;
 			
+		}
+		.hov1:hover{
+			background-color: rgba(0,0,0,0.53) !important;
+			color: yellow !important;
 		}
 	</style>
 	<section class="banner bgwhite p-t-40 p-b-40">
@@ -248,7 +257,7 @@
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/c85699cb-2813-4acd-8822-c3344fe07f17/nike-just-do-it.jpg" alt="IMG-BANNER" class="ban_img">
+						<img src="{% static 'images/banner_black_friday.jpg' %}" alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -263,7 +272,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								ompre agora
+								Compre agora
 							</a>
 						</div>
 
@@ -273,7 +282,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_700,c_limit/3d8a771b-0fd0-49b0-a9ad-1c688b192bf9/nike-just-do-it.jpg"  alt="IMG-BANNER" class="ban_img">
+						<img src="{% static 'images/frete_gratis.jpg' %}" alt="IMG-BANNER" class="ban_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -333,7 +342,7 @@
 						<div class="wrap-btn-slide1 w-size1 " data-appear="slideInUp">
 							
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
+								COMPRAR
 							</a>
 						</div>
 					</div>
@@ -368,7 +377,7 @@
 								<div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4">
-								Shop Now
+								COMPRAR
 							</a>
 						</div>
 
@@ -393,7 +402,7 @@
 								<div class="wrap-btn-slide2 w-size1 animated" data-appear="slideInUp">
 						
 							<a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2  trans-0-4" style="background-color: black; color:white;">
-								Shop Now
+								COMPRAR
 							</a>
 						</div>
 
@@ -463,7 +472,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative">
-						<img src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/414db494-7ebc-4d53-bbff-58d50b380a24/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
+						<img url="https://static.nike.com/a/images/f_auto/dpr_2.0/h_573,c_limit/414db494-7ebc-4d53-bbff-58d50b380a24/nike-just-do-it.png" alt="IMG-BANNER" class="ban5_img">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
