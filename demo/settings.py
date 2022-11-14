@@ -63,9 +63,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
+print('STATICFILES_DIRS: ', STATICFILES_DIRS)
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+print('STATIC_ROOT: ', STATIC_ROOT)
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
+print('MEDIA_ROOT: ', MEDIA_ROOT)
 
 DATABASES = {
     "default": {
